@@ -1,13 +1,19 @@
-.library-couse {
+.library-course {
     display: grid;
-    gird-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: 1fr 1fr;
+    background-color: $color-orange;
 
-    &__title {
+    &__title-arrow {
+        grid-row: 1/2;
+        display: flex;
+    }
+
+    &__arrow {
         grid-row: 1/2;
     }
 
-    *__description {
+    &__description {
         grid-row: 2/3;
     }
 }
