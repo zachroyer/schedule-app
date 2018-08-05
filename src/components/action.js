@@ -9,9 +9,9 @@ class Action extends Component {
         this.status = false;
     }
 
-    handleAction = function () {
+    handleAction = function() {
         this.props.onClick()
-        if (!this.status) {
+        if(!this.status) {
             document.getElementById(this.id).classList.add('action-remove');
         } else {
             document.getElementById(this.id).classList.remove('action-remove');
@@ -26,15 +26,8 @@ class Action extends Component {
                 id={this.id}
                 onClick={() => this.handleAction()}
                 className={`${this.props.className} action`}>
-
             </a>
         )
-        // return (
-        //     <button onClick={() => this.props.onClick()} className={`${this.props.className} action`}>
-        //         { Icon('fas fa-plus-circle') }
-        //         {/* fas fa-times-circle */}
-        //     </button>
-        // )
     }
 }
 

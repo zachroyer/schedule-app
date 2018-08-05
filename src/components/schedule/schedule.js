@@ -18,12 +18,13 @@ class Schedule extends Component {
         })
     }
 
+
     render() {
         this.amountEnrolled = 0
         return (
-            <div className='schedule'>
-                <h1 className='schedule__title'>Course Schedule</h1>
-                { this.renderCourses()}
+            <div className="schedule">
+                <h1 className="schedule__title">My Schedule</h1>
+                { this.renderCourses() }
                 <ProgressTracker amountPossible={5} amountEnrolled={this.amountEnrolled}/>
                 <Gradient/>
             </div>
